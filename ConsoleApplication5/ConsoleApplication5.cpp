@@ -12,18 +12,15 @@ int main()
     std::cin >> t;
     std::cout << "l - lamp. Enter a value [0 or 1]. 0 - off. 1 - on\n";
     std::cin >> l;
-        if (l == 1)
-        {
-            std::cout << "Bright";
-        }
-        if (t == 1 and cur == 1)
-        {
-            std::cout << "Bright";
-        }
-        else
-        {
-            std::cout << "Dark";
-        }
+
+    if ((l == 1) || (t == 1 && cur == 1))
+    {
+        std::cout << "Bright";
+    }
+    else
+    {
+        std::cout << "Dark";
+    }
 }
 
 // Запуск программы: CTRL+F5 или меню "Отладка" > "Запуск без отладки"
